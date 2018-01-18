@@ -39,9 +39,9 @@ PlotSize = [100, 100, 1049, 895];
 ScaleV = 0;
 ScaleF = 0;
 
-% Simulation initiallization
+%%% Simulation initiallization
 % InitBlock
-InitCirc
+ InitCirc
 % InitBlock0
 % InitBlock0FD
 % InitVStream
