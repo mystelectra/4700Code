@@ -4,7 +4,7 @@ TStop = 2000 * dt;
 InitDist = 0.0;
 Method = 'VE'; % VE -- verlot; FD -- Forward Difference
 
-Mass0 = 14 * C.am; % Silicon
+Mass0 = 11 * C.am; % Unknown
 Mass1 = 5 * C.am; % Argon
 
 AtomSpacing = 0.5430710e-9;
@@ -15,9 +15,12 @@ PhiCutoff = 3 * AtomSpacing * 1.1;
 
 T = 30;
 
-AddHCPAtomicArray(11, 7, 0, 0, 0, 0, 0, 0, T, 0);
+AddHCPAtomicArray(11, 7, 0, 0, 0, 0, 0, 0, T, 1);
 
-Size = 8*AtomSpacing;
+Ep = 2;
+AddParticleStream(11, -3, 10, -47*pi / 2, 0, Ep * C.q_0, 5);
+
+Size = 40*AtomSpacing;
 Limits = [-Size +Size -Size +Size]; % square is good
 PlDelt = 5*dt;
 
