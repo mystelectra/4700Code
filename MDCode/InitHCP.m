@@ -15,12 +15,13 @@ PhiCutoff = 3 * AtomSpacing * 1.1;
 
 T = 30;
 
-AddHCPAtomicArray(11, 7, 0, 0, 0, 0, 0, 0, T, 1);
+AddHCPAtomicArray(11, 7, 0,0, 0.1,0, 0, 0, T, 1);
+AddHCPAtomicArray(3, 2, 0.000000005, -0.000000005, -1.2, 0.4, -0.5, 2, T+750, 1);
 
 Ep = 2;
-AddParticleStream(11, -3, 10, -47*pi / 2, 0, Ep * C.q_0, 5);
+%AddParticleStream(1, -3, -10, -3*pi / 2, 0, Ep * C.q_0, 5);
 
-Size = 40*AtomSpacing;
+Size = 20*AtomSpacing;
 Limits = [-Size +Size -Size +Size]; % square is good
 PlDelt = 5*dt;
 

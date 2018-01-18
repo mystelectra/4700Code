@@ -1,4 +1,4 @@
-function [ output_args ] = AddParticleStream(num, x0, y0, PartAng, Type, Ep, Seper)
+function [ output_args ] = AddParticleStream(num, x0, y0, PartAng, Type, Ep, Seper) %Ep = particle energy
 global AtomSpacing x y AtomType Vx Vy Mass0 Mass1 nAtoms
 
 if Type == 0
