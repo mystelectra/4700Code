@@ -41,7 +41,7 @@ ScaleF = 0;
 PlotPosOnly = 0;
 
 %%% Simulation initiallization
-% InitBlock
+ InitBlock
  %InitCirc
 % Simulation initiallization
 %InitThree
@@ -50,7 +50,7 @@ PlotPosOnly = 0;
 % InitBlock0
 % InitBlock0FD
 %InitVStream
-InitHCP
+%InitHCP
 % InitHCPBlob
 % InitVStreamHCP
 % InitHCPMeltSim
